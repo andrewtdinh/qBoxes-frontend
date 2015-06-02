@@ -1,0 +1,22 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <label class="item">
+        <button class="button button-block button-positive ion-social-facebook" ng-click="oauth('facebook')">
+          &nbsp;(Login via Facebook)
+        </button>
+      </label>
+      <label class="item">
+        <button class="button button-block button-assertive ion-social-googleplus" ng-click="oauth('google')">
+          (Login via Google+)
+        </button>
+      </label>
+    </div>
+  </ion-content>
+</ion-modal-view>
